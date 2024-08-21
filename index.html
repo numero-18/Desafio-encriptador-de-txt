@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Descripcion" content="Ecriptador y desencriptador de texto.">
+    <title>Ecriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+            <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer ">
+            <img src="./img/logo.png" id="logo" class="logo" ></a> 
+        <div class="encriptar">
+            <textarea 
+             name="texto"
+             class="texto" 
+             id="texto" 
+             cols="30" 
+             rows="10" 
+             placeholder="Ingrese el texto aqui"
+             ></textarea>
+        </div>
+        <div class="terminos">
+            <img src="img/aler.png" class="aler">
+            <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">
+                Encriptar
+            </button>
+            <input 
+            type="button" 
+            class="btn-desencriptar" 
+            value="Desencriptar" 
+            onclick="desencriptar()"
+            >
+            <button class="btn-copiar" type="button" onclick="copiar()">
+                Copiar
+            </button>
+        </div>
+        <div class="marca">
+            <h6 class="marcaH">Alura Latam</h6>
+        </div>
+
+        <div class="encriptado">
+            <img src="img/grafico.png" alt="" id="grafico">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado.</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
